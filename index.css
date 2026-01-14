@@ -220,19 +220,19 @@ gameover display
 }
 
 #gameover-display > * {
-    margin: 0;
+    margin-block: 0;
 }
 
 #gameover-display h2 {
+    font-size: 3rem;
     text-align: center;
-    font-size: 5rem;
     color: rgb(198, 43, 43);
     text-shadow: -2px -2px white, -2px 2px white, 2px 2px white, 2px -2px white,
         -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 #gameover-display button {
-    font-size: 2rem;
+    font-size: 1.15rem;
     padding: 1rem;
     cursor: pointer;
     box-shadow: 0 0 3px rgb(227, 227, 227);
@@ -248,7 +248,7 @@ gameover display
 }
 
 #gameover-display p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 0;
     font-weight: bold;
 }
@@ -256,6 +256,18 @@ gameover display
 #gameover-display p > span {
     font-weight: bold;
     color: black;
+}
+
+@media (min-width: 750px) {
+    #gameover-display h2 {
+        font-size: 5rem;
+    }
+    #gameover-display button {
+        font-size: 2rem;
+    }
+    #gameover-display p {
+        font-size: 2.5rem;
+    }
 }
 
 .display-hidden {
