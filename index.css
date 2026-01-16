@@ -227,8 +227,30 @@ gameover display
     font-size: 3rem;
     text-align: center;
     color: rgb(198, 43, 43);
-    text-shadow: -2px -2px white, -2px 2px white, 2px 2px white, 2px -2px white,
-        -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-shadow: 
+        -1px -1px white, 
+        -1px  1px white, 
+         1px  1px white, 
+         1px -1px white,
+        -1px  0   white, 
+         0    1px white, 
+         1px  0   white, 
+         0   -1px white;
+}
+
+@media (min-width: 750px) {
+    #gameover-display h2 {
+        font-size: 5rem;
+        text-shadow: 
+            -2px -2px white, 
+            -2px  2px white, 
+             2px  2px white, 
+             2px -2px white,
+            -1px  0   white, 
+             0    1px white, 
+             1px  0   white, 
+             0   -1px white;
+    }
 }
 
 #gameover-display button {
@@ -259,9 +281,6 @@ gameover display
 }
 
 @media (min-width: 750px) {
-    #gameover-display h2 {
-        font-size: 5rem;
-    }
     #gameover-display button {
         font-size: 2rem;
     }
