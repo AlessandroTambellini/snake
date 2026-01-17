@@ -47,6 +47,7 @@ body {
     position: relative; /* useful to control the position
     of the snake and of the mouse. */
     box-shadow: 0 0 4px rgb(188, 250, 158);
+    border: min(var(--clod-size), calc((100vw - var(--row-width)) / 2)) solid rgb(0, 100, 0);
 }
 
 .row {
@@ -73,16 +74,6 @@ body {
     background-color: rgb(143, 212, 121);
 }
 
-@media (max-aspect-ratio: 1/1) { /* (width / height) <= 1 --> vertical */
-    #garden {
-        border: min(var(--max-clod-size), calc((100vw - var(--row-width)) / 2)) solid rgb(0, 100, 0);
-    }
-}
-@media (min-aspect-ratio: 1/1) { /* horizontal */
-    #garden {
-        border: min(var(--max-clod-size), calc((100vh - var(--garden-height)) / 2)) solid rgb(0, 100, 0);
-    }
-}
 
 /*
 
